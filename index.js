@@ -45,6 +45,11 @@ app.get('/route', (req, res) => {
     });
 });
 
-app.listen(PORT, () => {
-  console.log(`listening on ${PORT}`);
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 8000;
+}
+
+app.listen(port, () => {
+  console.log(`listening on ${port}`);
 })
