@@ -1,0 +1,84 @@
+body {
+  height: 1000px;
+  background-image: radial-gradient(#fee, #055);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+#inputField {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  background: black;
+  width: 100%;
+  height: 50px;
+  color: whitesmoke;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.locationHeader {
+  background: #055;
+  margin-right: 20px;
+  width: 150px;
+  vertical-align: middle;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.locationHeader:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
+}
+
+.routeHeader {
+  background: #055;
+  width: 150px;
+  vertical-align: middle;
+  line-height: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.routeHeader:hover {
+  filter: brightness(1.25);
+  cursor: pointer;
+}
+
+.loc #inputField {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  background: #1e77e2;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 5px 5px 15px black;
+  outline: none;
+  color: whitesmoke;
+  font-weight: bold;
+  height: 80px;
+  width: 250px;
+  font-size: 17px;
+}
+
+button:hover {
+  filter: brightness(1.25);
+}
+
+input {
+  height: 80px;
+  width: 250px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+}
