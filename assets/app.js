@@ -18,7 +18,7 @@ function checkInputs() {
 
 function getCoordinates() {
   let myRequest = new XMLHttpRequest();
-  myRequest.open('GET', `http://localhost:3000/location?location=${input1.value}`, true);
+  myRequest.open('GET', `http://localhost:${process.env.PORT}/location?location=${input1.value}`, true);
   myRequest.onload = () => {
     if (myRequest.status === 200) {
       const results = JSON.parse(myRequest.response);
@@ -43,7 +43,7 @@ function getRoute() {
   console.log('hello');
   let input2 = document.getElementById('input2');
   let routeRequest = new XMLHttpRequest();
-  routeRequest.open('GET', `http://localhost:3000/route?from=${input1.value}&to=${input2.value}`, true);
+  routeRequest.open('GET', `http://localhost:${process.env.PORT}/route?from=${input1.value}&to=${input2.value}`, true);
   routeRequest.onload = () => {
     if (routeRequest.status === 200) {
       const results = JSON.parse(routeRequest.response);
